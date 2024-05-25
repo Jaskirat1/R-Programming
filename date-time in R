@@ -1,0 +1,37 @@
+#Date and Time in R
+
+#using lubridate function
+
+#install.packages("tidyverse")
+
+library(tidyverse)
+library(lubridate)
+# 
+# In R, there are 3 different types of date and time that refer to an instant
+# A date today()
+# A date-time. now()
+#A time within a day
+
+
+today()
+now()
+Sys.time()
+
+
+
+#Converting form strings
+
+ymd("2021-01-20")
+mdy("June 20th, 2023")
+dmy("20-Jan-2020")
+
+
+
+ymd(20000210)
+
+
+ymd_hms("2000-02-10 22:12:34")
+
+
+
+as_date(now()) #--> used to convert a date-time to a date.
