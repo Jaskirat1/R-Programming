@@ -1,0 +1,97 @@
+#Common Data structures in R are :- 
+#1. Vectors
+#2. Data frames
+#3. Matrices
+#4. Arrays
+#Vectors and lists in R programming
+#So, in R there are two types of vectors :- 
+# atomic vectors and lists.
+#Atomic vectors types:-
+# -->logical---------------\
+# -->integer--\Numeric----->\Atomic-->Vector
+# -->double --/             /
+# -->character-------------/
+
+# c()function --> combine function, combines multiple 
+#                 values into a vector.
+c(1, 2.4, TRUE)
+
+c(2.5,48.5,101.53) 
+
+c(1L, 5L, 10L) # if we are writing an integer we need to place "L" directly after each number.
+
+c("Aman", "Seerat", "Daman")
+
+c(TRUE, FALSE, TRUE)
+
+# REMEMBER Atomic vector can only contain elements of same type.
+#IF we want to store different types of elements then we can use a list.
+
+# Properties of vector 
+# type and length
+# if we want to check the type of any vector 
+# we will use typeof() function
+
+typeof(c(1L,TRUE, 23.44, "boy"))
+
+
+typeof(c(TRUE))
+typeof(c(2L))
+typeof(c(23.234))
+typeof(c("Girl"))
+
+#length()function used to count many elements it contains
+
+length(c(1L, 24L, "Boy", 34.67))
+
+# We can also check the type of a specific vector by using these fucntions
+# is.logical(), isdouble(), is.integer(), is.character()
+
+is.logical(c(TRUE, 1L))
+
+is.logical(c(TRUE, FALSE))
+
+is.character(c("A", "B", "C"))
+
+is.double(c(23.45, 56.78))
+
+is.integer(c(1L, 2))
+
+is.integer(c(1L, 3L))
+
+
+#Or we can write as 
+
+x <- c(1L, 2L,3L)
+y <- c("A", "B", "c")
+
+length(x)
+length(y)
+x
+
+
+# Lists
+
+#List elements can be of different types like:- Dates, 
+#Data frames, vectors, matrices and more. It can even contain other lists.
+
+
+list(list("a", 1L, 1.45, TRUE))
+
+
+#To find out what type of elements a list conatins, 
+# we can use str()function.
+str(list("a", 1L, 1.56, TRUE))
+
+
+z<- list(list(list(1,3,5,67)))
+z
+
+str(z)
+
+
+#Naming List
+
+m <- list('Apple' = 3, "banana" = 12, "Orange" = 10)
+m
+str(m)
